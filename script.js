@@ -31,14 +31,14 @@ window.addEventListener("scroll", async () => {
 	const allVideos = document.getElementsByTagName("video")
 
 	for (let i = 0; i < allVideos.length; i++) {
-		if(allVideos[i].paused === false){
-			
+		if (allVideos[i].paused === false) {
+
 			if (!allVideos[i].hasAttribute('isPip')) {
 
 				await allVideos[i].requestPictureInPicture();
-		
+
 				allVideos[i].setAttribute('isPip', true);
-		
+
 				allVideos[i].addEventListener('leavepictureinpicture', event => {
 					allVideos[i].removeAttribute('isPip')
 				}, {
