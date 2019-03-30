@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    height:2000px ;
+    background: #ededed;
+}
+
+div.container{
+    max-width: 50%;
+    margin: 0 auto;
+    background: #cce6ff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container video {
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+div.container button {
+    color: #fff;
+    background: #4da6ff;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #fff; 
+    padding: 20px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    outline: 0;
+}
+
+div.container button:hover {
+    color: #4da6ff;
+    background: #fff;
+    border: 2px solid #4da6ff; 
+}
